@@ -1,0 +1,207 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("../img/start.jpg");
+  
+}
+
+.pageTitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(38, 127, 159);
+  text-shadow: 2px 2px 4px rgb(190, 190, 190);
+}
+
+.mainContainer {
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 70px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.itemContainer {
+  padding: 10px;
+}
+
+.card-header {
+  background-color: rgb(38, 127, 159);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.card {
+  margin-top: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.leftCol {
+  border-right: solid rgb(38, 127, 159);;
+}
+
+.headerCol {
+  border-bottom: solid rgb(38, 127, 159);;
+}
+
+.submitCol {
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: rgb(38, 127, 159);
+}
+
+button.submit {
+  float: right;
+}
+
+form#add {
+  margin-top: 50px;
+}
+
+#add textarea {
+  resize: none;
+}
+
+.card-header button.delete,
+button.edit {
+  float: right;
+  margin: 5px;
+}
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.indexPage {
+  background-image: url("../img/start.jpg");
+  background-size: 100%;
+  background-repeat: repeat-x repeat-y;
+}
+
+.indexContainer {
+  background: rgba(242, 242, 242, 0.3);
+  margin: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcomeText {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 50px;
+}
+
+.far {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.loginBtn {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.signUpBtn {  
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron {
+  background-image: url("../img/start.jpg");
+  background-size: 100%;
+  background-repeat: repeat-x repeat-y;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.adminOnly {
+  float: right;
+}
+
+.logOut {
+  float: left;
+}
+
+#search-button {
+  float: right;
+}
+
+.doubleRow {
+  display: flex;
+  margin-left: 15%;
+  padding: 0;
+}
+
+.weirdRow {
+  flex-direction: row;
+  flex-basis: 100%;
+}
+
+.mrg-top-5 {
+  margin-top: 100px;
+}
+
+.btn-info {
+  margin-right: 20px;
+}
+
+form {
+  overflow: hidden;
+}
+
+
+/* These are making sure the log in and sign in forms are aligned. */
+.labelStyle{
+  display: inline-block;
+  clear: left;
+  width: 100px;
+  text-align: right;
+}
+
+.inputStyle {
+display: inline-block;
+}
+
+
+nav {
+  background-color: rgba(242, 242, 242, 0.555);
+  border-bottom: 2px solid rgb(38, 127, 159);
+  margin-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-item {
+  background-color: white;
+  margin: 5px;
+  box-shadow: 2px 2px 4px #000000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.btn:hover {
+  background-color: rgb(148, 144, 144);
+}
+
+.navbar-brand {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 24px;
+}
+
+
+/*style for the footer, including border, and sticky*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(242, 242, 242, 0.555);
+  border-top: 2px solid rgb(38, 127, 159);
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}

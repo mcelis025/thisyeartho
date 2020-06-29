@@ -1,0 +1,110 @@
+<!-- This is going to be the main page. If a user is not logged in, they should be able
+to search the database for existing articles. We need to decide if a user that is not logged in
+should be able to add articles. If not, then this will only need the search capability. Otherwise,
+it will also need a form for article submission.
+Possibly putting in the random button here.
+There should also be a link at the top to take them to the sign in page and another link to
+take them to the sign up page. 
+If a user is logged in, we'll show them the dashboard page, which will have similar
+functionality.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>Article Validator Pro</title>
+</head>
+
+<body class="indexPage">
+    <div class="container mt-5 pt-5 pb-3">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="far fa-edit mx-auto" style="font-size:48px;color:white"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center indexContainer rounded pb-5 pt-5">
+        <div class="row">
+            <div class="col-md-12 text-center pb-5">
+                <h2 class="welcomeText">Welcome to Article Validator Pro!</h2>
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button class="text-light btn btn-lg btn-outline-dark loginBtn pl-4 pr-4" data-toggle="modal"
+                    data-target="#loginModal">Login <i class="fas fa-sign-in-alt"></i></button>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Login</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form id="signin" name="signin" method="post" action="signin">
+                                <label class="labelStyle" for="email">Email Address</label>
+                                <input class="text inputStyle" name="email" type="text" />
+                                <br>
+                                <label class="labelStyle" for="password">Password</label>
+                                <input class="inputStyle" name="password" type="password" />
+                                <br>
+                                <input class="btn btn-info" type="submit" value="Sign In" /><button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <a class="text-light btn btn-lg btn-outline-dark signUpBtn pl-4 pr-4" data-toggle="modal"
+                    data-target="#signUpModal">Sign Up <i class="fas fa-user-plus"></i></a>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="signUpModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sign Up</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form id="signup" name="signup" method="post" action="/signup">
+                                <label class="labelStyle" for="email">Email Address</label>
+                                <input class="text inputStyle" name="email" type="email" />
+                                <br>
+                                <label class="labelStyle" for="firstname">Name</label>
+                                <input class="inputStyle" name="firstname" type="text" />
+                                <br>
+                                <label class="labelStyle" for="password">Password</label>
+                                <input class="inputStyle" name="password" type="password" />
+                                <br>
+                                <input class="btn btn-info" type="submit" value="Sign Up" /><button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+ 
+
+</body>
+
+</html>
